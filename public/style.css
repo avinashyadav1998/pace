@@ -1,0 +1,24 @@
+	body{background-color:  hotpink;font-family: verdana; color : white; paddig: 30px;}
+
+	h1{font-size: 48px,text-transform:uppercase; letter-sapcing: 2px; text-align: center;}
+	p{font-size: 16px;text-align: center;}
+	a#one{
+		background-color: #f44336;
+  		color: white;
+  		padding: 15px 25px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+		}
+
+#contact-form{
+      display: grid;
+      padding: 5% 30%;
+    }
+    #contact-form label, #contact-form input{
+      padding: 10px;
+    }
+    #contact-form input[value=submit]{
+      margin-top: 20px;      
+      max-width: 100px;
+    }﻿

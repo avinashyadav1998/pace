@@ -1,0 +1,51 @@
+
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="/assets/bootstrap.css">
+    <title>Admin Login</title>
+</head>
+<style>
+    .login-panel {
+        margin-top: 150px;
+
+</style>
+
+<body>
+    
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="login-panel panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Reset Password</h3>
+                </div>
+                <div class="panel-body">
+                    <form role="form" method="POST" action="/password">
+                        <fieldset>
+                            <div class="form-group"  >
+                                <label>Userid</label>
+                                <input class="form-control"  type="email" name="userid" value=" <%= mb.userid %> " required>
+                            </div>
+                            <div class="form-group">
+                                <label>Mobile no</label>
+                                <input class="form-control" type="text" name="mobile" value=" <%= mb.mobile %> " pattern="[7-9]{1}[0-9]{9}"required>
+                                <label>enter valid mobile no</label>
+                            </div>
+
+
+                            <input class="btn btn-lg btn-success btn-block" type="submit" value="clik me" name="submit" >
+
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+</html>
+

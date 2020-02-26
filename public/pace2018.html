@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+  background-color:#e5e5e5;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+@media only screen and (max-width:1000%) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:500%;
+  }
+  .right1 {
+    color: skyblue;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;color: #aaaaaa; background-color: skyblue">  <!-- #aaaaaa ,  -->
+
+<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+  <h1>Pace 2018 in a Go</h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="#">Gallery</a>
+    <a href="#">Awards</a>
+    <a href="#">Winners</a>
+    <a href="#">Chief Guest</a>
+  </div>
+
+  <div class="main">
+    <h2>Highlights of Pace 2019</h2>
+    <p>.</p>
+  </div>
+
+  <div class="right">
+    <h2>About</h2>
+    <p>Pace is a Sports Fest of AIT.</p>
+  </div>
+</div>
+
+
+
+</body>
+</html>

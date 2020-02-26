@@ -1,0 +1,56 @@
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="/assets/bootstrap.css"> <!--css file link in bootstrap folder-->
+    <title>View Users</title>
+</head>
+<style>
+    .login-panel {
+        margin-top: 150px;
+    }
+    .table {
+        margin-top: 50px;
+
+    }
+
+</style>
+
+<body>
+
+    
+<div class="table-scrol">
+    <h1 align="center" style="color: green;">All the Users</h1>
+
+<div class="table-responsive"><!--this is used for responsive display in mobile and other devices-->
+
+        <a href="/"  class="login-panel"><h2>LogOut</h2></a>
+
+    <table class="table table-bordered table-hover table-striped" style="table-layout: hidden; ">
+        <thead>
+
+        <tr>
+            <th>Sr. No</th>
+            <th>User Name</th>
+            <th>User E-mail</th>
+            <th>User Password</th>
+        </tr>
+        </thead>
+
+    <h2>Total no of Users :-  <b> <%=qs.length%> </b> </h2>
+
+   <% for(var i=0; i< qs.length; i++) {%>
+
+    <tr>
+        <td> <%=i+1%> </td>
+        <td> <%=qs[i].name%> </td>
+        <td> <%=qs[i].email%> </td>
+        <td> <%=qs[i].password%> </td>
+    </tr>
+    <% } %>
+        </div>
+</div>
+
+
+</body>
+
+</html>

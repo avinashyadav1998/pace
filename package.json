@@ -1,0 +1,23 @@
+{
+  "name": "coding_ninja",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alert-node": "^1.2.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.16",
+    "nexmo": "^2.4.1",
+    "nodemailer": "^5.1.1",
+    "sendotp": "^1.2.9",
+    "twilio": "^3.29.2"
+  }
+}

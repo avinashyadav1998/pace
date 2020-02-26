@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ninja it is</title>
+	<head>
+		<link rel="stylesheet" type="text/css" href= "/assets/style.css" >
+	</head>
+</head>
+<body>
+		<% include partials/nav.ejs %>
+
+		<h1> CONTACT US !!!! </h1>
+		<p>!!! jha mil jaye  !!!!</p>
+
+
+		<form id="contact-form" method="POST" action="/contact">
+			<label>Name</label>
+			<input type="text" name="name" value=" <%= qs.name %> " required>
+			<label>Department</label>
+			<input type="text" name="dept" value=" <%= qs.dept %> " required> <br>
+			<label>Email</label>
+			<input type="email" name="email" value=" <%= qs.email %> " required> <br>
+			<input type="submit" name="submit">
+		</form>
+
+</body>
+</html>
